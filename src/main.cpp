@@ -18,10 +18,27 @@ void setup() {
   }
   delay(2000);
   display.clearDisplay();
-  display.setTextSize(1);
+  display.setTextSize(2);
   display.setTextColor(WHITE);
   display.setCursor(0, 0);
-  display.println("Preuve de concept");
+  display.println("Aquarium");
+  display.setCursor(0, 17);
+  display.setTextSize(1);
+  display.println("IP: 192.168.15.160");
+  display.setCursor(0, 28);
+  display.println("Eau");
+  display.setCursor(45, 28);
+  display.println("led");
+  display.setCursor(90, 28);
+  display.println("pompe");
+  display.setCursor(0, 39);
+  display.print("78");
+  display.print((char)247);
+  display.println("F");
+  display.setCursor(45, 39);
+  display.println("OFF");
+  display.setCursor(90, 39);
+  display.println("OFF");
   display.display(); 
 }
 
